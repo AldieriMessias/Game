@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Personagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Seleção de Personagens</h1>
+    <form id="battleForm">
+        <div class="character-selection">
+            <h2>Selecione seus personagens</h2>
+            <label for="character1">Personagem 1:</label>
+            <select id="character1" name="character1" required>
+                <option value="fire">Fogo</option>
+                <option value="water">Água</option>
+                <option value="earth">Terra</option>
+                <option value="air">Ar</option>
+            </select>
+
+            <label for="character2">Personagem 2:</label>
+            <select id="character2" name="character2" required>
+                <option value="fire">Fogo</option>
+                <option value="water">Água</option>
+                <option value="earth">Terra</option>
+                <option value="air">Ar</option>
+            </select>
+        </div>
+
+        <div class="level-selection">
+            <h2>Selecione o nível da batalha</h2>
+            <label for="level">Nível:</label>
+            <input type="number" id="level" name="level" min="1" required>
+        </div>
+
+        <button type="submit">Iniciar Batalha</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
